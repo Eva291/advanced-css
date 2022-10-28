@@ -1,0 +1,51 @@
+@mixin hover-transform {
+  transition: 0.5s transform ease-in-out;
+  &:hover {
+    transform: translateX(calc(-100% + 50px));
+  }
+}
+
+.socials-container {
+  color: white;
+  text-decoration: underline;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60%;
+  left: calc(100% - 85px);
+
+  .social-media {
+    @include hover-transform();
+    padding: 5px;
+    width: 250px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-align: center;
+  }
+
+  .blog {
+    background-color: rgb(222, 99, 99);
+  }
+
+  .twitter {
+    background-color: rgb(69, 187, 241);
+  }
+
+  .linkedin {
+    background-color: rgb(61, 127, 160);
+  }
+
+  .fb {
+    background-color: rgb(38, 48, 117);
+  }
+
+  .github {
+    background-color: black;
+  }
+}

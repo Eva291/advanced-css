@@ -1,0 +1,57 @@
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Trebuchet MS", arial, verdana, sans-serif;
+
+  .testimonial {
+    font-size: xx-large;
+    border: 1px solid transparant;
+    border-radius: 25px;
+    box-shadow: -5px 10px 25px -5px grey, 5px 10px 30px -5px grey;
+    width: 650px;
+    height: 850px;
+    margin-left: 50px;
+
+    p {
+      color: rgb(108, 107, 107);
+      line-height: 1.8;
+      padding: 70px 70px 40px 70px;
+    }
+
+    .rounded-image {
+      width: 200px;
+      height: 200px;
+      margin-top: -70px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 10px solid white;
+      border-radius: 50%;
+      transform: translateY(20px);
+    }
+
+    .testimonial-footer {
+      background: #686de0;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 130px;
+      padding-bottom: 40px;
+      margin-top: -90px;
+      border: 1px solid transparent;
+      border-radius: 0px 0px 25px 25px;
+      .naam {
+        color: #fff;
+        letter-spacing: 3px;
+      }
+      .website {
+        color: rgba(217, 217, 217, 0.536);
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  @import "./grid";
+
+  @import "./social";
+}

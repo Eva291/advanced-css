@@ -1,0 +1,279 @@
+$padding: 20px;
+$img-border-radius: 25px;
+
+.grid {
+  background-color: #c3cfe2;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  place-items: center;
+  padding: $padding;
+
+  button {
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .grid-image:hover + button,
+  button:hover {
+    display: inline-block;
+  }
+
+  .grid-image {
+    height: auto;
+    width: 90%;
+    margin: 10px 20px;
+    border-radius: $img-border-radius;
+    &:hover {
+      opacity: 0%;
+      transition-duration: 1s;
+    }
+  }
+
+  #img-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .btn-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  #img-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .btn-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  #img-3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .btn-3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  #img-4 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .btn-4 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  #img-5 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  .btn-5 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  #img-6 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  .btn-6 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  #img-7 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+
+  .btn-7 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    padding: $padding;
+
+    .grid-image {
+      height: auto;
+      width: 90%;
+      margin: 20px;
+      border-radius: $img-border-radius;
+    }
+
+    #img-1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    .btn-1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    #img-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    .btn-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    #img-3 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+
+    .btn-3 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+
+    #img-4 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    .btn-4 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    #img-5 {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+
+    .btn-5 {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+
+    #img-6 {
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+
+    .btn-6 {
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+
+    #img-7 {
+      grid-row: 4/5;
+      grid-column: 1/2;
+    }
+
+    .btn-7 {
+      grid-row: 4/5;
+      grid-column: 1/2;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    padding: $padding;
+
+    .grid-image {
+      height: auto;
+      width: 90%;
+      margin: 20px;
+      border-radius: $img-border-radius;
+    }
+
+    #img-1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    .btn-1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    #img-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    .btn-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    #img-3 {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+
+    .btn-3 {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+
+    #img-4 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+
+    .btn-4 {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+
+    #img-5 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    .btn-5 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    #img-6 {
+      grid-row: 2/3;
+      grid-column: 3/4;
+    }
+
+    .btn-6 {
+      grid-row: 2/3;
+      grid-column: 3/4;
+    }
+
+    #img-7 {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+
+    .btn-7 {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+  }
+}
